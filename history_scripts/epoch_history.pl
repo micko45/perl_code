@@ -20,7 +20,7 @@ foreach my $a (@arry) {
     $a =~ s/#//;
 my $realtime = localtime($a);
     chomp($b);
-    my $data = "$realtime: $details[4]: $details[6]:  $b";
+    my $data = "${realtime}::${details[4]}::${details[-3]}::${details[-2]}::$b";
     print $data, "\n";
   }
   $count ++;
